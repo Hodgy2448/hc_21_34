@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08465163-e828-48f5-a9f8-861fdeee67f7" name="Default Changelist" comment="3">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f303484a-c899-493e-af7b-2dc4f9944a15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f303484a-c899-493e-af7b-2dc4f9944a15/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/AccountData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/AccountDataSet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/PlacementData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/PlacementDataSet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/SkillsData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/SkillsDataSet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/StudentData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/StudentDataSet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/aboutus.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/index.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/legal.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/login.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/myprofileemployer.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/myprofilestudent.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/organisations.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/placement.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/searchplacements.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/searchstudents.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/signup.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/support.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/template/footer.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/template/header.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/universities.phtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aboutus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/my-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/600af2a275ba55.21629581.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/600af2ec5966e9.64322918.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/600b0270721972.07149017.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/600b059e8e8bb8.65205867.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/601010e161f602.31656392.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/601010eabd92d4.84878695.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/601011590b54c8.27463168.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/6010115f04b199.46033836.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/6010123a760234.14386516.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/601013fe09da10.27458620.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/601015678a4974.75452137.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/601016c8990639.69885807.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/60101adc641fb9.84871058.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/60101da24085c5.37066908.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/60101e8e237768.90707086.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/60101f457cc281.71281578.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/60103f2f5edfb0.80451520.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/60103f897eb6d5.38790023.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvuploads/601040cce0ce31.82443639.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Coding/Coding1 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Coding/Coding2 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Coding/Coding3 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Coding/Coding4 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Amazon (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Apple (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Company1 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Hired (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/IBM (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Interview (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Microsoft (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Office1 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Office2 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Tesla (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Company/Twitter (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Desk (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Graduates1 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Graduets2 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Graduets3 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Graduets4 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Puzzled (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Resume1 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Working1 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Working2 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student/Working3 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/University/campus1 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/University/campus2 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/University/campus3 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/University/campus4 (Medium).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bcs-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myprofile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organisations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/placement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchplacements.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/searchstudents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/universities.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="C:/xampp/php/PEAR" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1nQVf0nvyjGhQzrNxBP6WCyvSd8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\University Files\Data Structures and Algorithms\HackCamp\Models" />
+      <recent name="F:\University Files\Data Structures and Algorithms\HackCamp\Views" />
+      <recent name="F:\University Files\Data Structures and Algorithms\HackCamp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="hc31_34" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8000">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08465163-e828-48f5-a9f8-861fdeee67f7" name="Default Changelist" comment="" />
+      <created>1611322401057</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611322401057</updated>
+      <workItem from="1611322402146" duration="13604000" />
+      <workItem from="1611601993081" duration="8607000" />
+      <workItem from="1611659892937" duration="16871000" />
+      <workItem from="1611680238236" duration="3550000" />
+    </task>
+    <task id="LOCAL-00001" summary="3">
+      <created>1611680584802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611680584802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
+  </component>
+</project>

@@ -1,0 +1,24 @@
+<?php require('template/header.phtml') ?>
+<div id="loginform">
+    <h2><b><u>Login</u></b></h2>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <label>Email: </label>
+    <input type="text" name="email" value=""
+    <?php if (isset($_POST['email'])) {
+        echo $_POST['email']; 	} ?> />
+    <label>Password: </label>
+    <input type="password" name="password" value=""
+    <?php if (isset($_POST['password'])) {
+        echo $_POST['password']; 	} ?> />
+    </div>
+
+    <div id="loginbutton">
+        <input type="submit" value="submit" name="submit" />
+        <input type="reset" value="reset" name="reset" />
+    </div>
+<?php if (isset($view->result)) : ?>
+    <p><?php echo $view->result; ?></p>
+<?php endif; ?>
+    </form>
+</div>
+<?php require('template/footer.phtml') ?>

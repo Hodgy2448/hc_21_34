@@ -1,0 +1,124 @@
+<?php require('template/header.phtml') ?>
+
+<div id="myprofile">
+    <h1><b>My Profile</b></h1>
+    <p></p>
+    <h2><b><u>Welcome <?php
+                echo $_SESSION['name'];
+                ?>!</u></b></h2>
+    <p></p>
+    <label>Name</label>
+    <?php echo $view->sessionName; ?>
+    <br>
+    <label>Email</label>
+    <?php echo $view->sessionEmail; ?>
+    <br>
+    <label>Date of Birth</label>
+    <?php echo $view->sessionDob; ?>
+    <br>
+    <label>Type</label>
+    <?php echo $view->sessionType; ?>
+    <br>
+    <label>Phone Number</label>
+    <?php echo $view->sessionPhonenumber; ?>
+    <br>
+    <label>Address1</label>
+    <?php echo $view->sessionAddress1; ?>
+    <br>
+    <label>Address2</label>
+    <?php echo $view->sessionAddress2; ?>
+    <br>
+    <label>Address3</label>
+    <?php echo $view->sessionAddress3; ?>
+    <br>
+    <label>Postcode</label>
+    <?php echo $view->sessionPostcode; ?>
+
+</div>
+<?php echo '<div id="myprofileextra" style=" ' . $view->displayEmployer . '">'; ?>
+    <h2>Create Placement:</h2>
+    
+    <form action="<?php echo $_SERVER['PHP_SELF']. '?id=employer'; ?>" method="post" enctype="multipart/form-data">
+        <label>Company Title: </label>
+        <input type="text" name="companytitle" value=""
+            <?php if (isset($_POST['companytitle'])) {
+                echo $_POST['companytitle']; 	} ?> />
+        <br>
+        <label>Description: </label>
+        <input type="text" name="description" value=""
+            <?php if (isset($_POST['description'])) {
+                echo $_POST['description']; 	} ?> />
+        <br>
+        <label>Location: </label>
+        <input type="text" name="location" value=""
+            <?php if (isset($_POST['location'])) {
+                echo $_POST['location']; 	} ?> />
+        <br>
+        <label>Needed Skills: </label>
+        <select id="" name="skillsEmployer" <?php if (isset($_POST['skillsEmployer'])) { echo $_POST['skillsEmployer']; 	} ?> />
+        <option value="" name="skillsEmployer"> </option>
+        <?php
+        require_once ('Models/SkillsDataSet.php');
+        $skillDataSet = new SkillsDataSet();
+        $view->skillDataSet = $skillDataSet->fetchAllskills();
+        foreach ($view->skillDataSet as $skillData) {
+            echo '<option value="' . $skillData->getSkillsId() . '" name="skillsEmployer">' . $skillData->getSkillName() . '</option>';
+        }
+        ?>
+        </select>
+        <br>
+        <label>Needed Level: </label>
+        <select id="" name="skillsLevel" <?php if (isset($_POST['worktype'])) { echo $_POST['worktype']; 	} ?> />
+        <option value="" name="skillsLevel"> </option>
+        <option value="1" name="skillsLevel">1</option>
+        <option value="2" name="skillsLevel">2</option>
+        <option value="3" name="skillsLevel">3</option>
+        <option value="4" name="skillsLevel">4</option>
+        <option value="5" name="skillsLevel">5</option>
+        <option value="6" name="skillsLevel">6</option>
+        <option value="7" name="skillsLevel">7</option>
+        </select>
+        <br>
+        <label>Salary: </label>
+        <input type="text" name="salary" value=""
+            <?php if (isset($_POST['salary'])) {
+                echo $_POST['salary']; 	} ?> /> anually
+        <br>
+        <label>Start Date: </label>
+        <input type="date" name="startdate" value=""
+            <?php if (isset($_POST['startdate'])) {
+                echo $_POST['startdate']; 	} ?> />
+        <br>
+        <label>End Date: </label>
+        <input type="date" name="enddate" value=""
+            <?php if (isset($_POST['enddate'])) {
+                echo $_POST['enddate']; 	} ?> />
+        <div id="loginbutton">
+            <input type="submit" value="submit" name="submit" />
+            <input type="reset" value="reset" name="reset" />
+        </div>
+        <?php if (isset($view->result)) : ?>
+            <p><?php echo $view->result; ?></p>
+        <?php endif; ?>
+    </form>
+</div>
+</div>
+<?php echo '<div id="myprofileextra" style=" ' . $view->displayOppEmployer . '">'; ?>
+<h2>More details:</h2>
+<label>University: </label>
+<?php echo $view->sessionUniversity; ?>
+<br>
+<label>Course: </label>
+<?php echo $view->sessionCourse; ?>
+<br>
+<label>Skills: </label>
+<?php echo $view->sessionSkills; ?>
+<br>
+<label>CV Upload: </label>
+<?php echo file_get_contents('cvuploads/' . $view->sessionFile); ?>
+<br>
+
+</div>
+
+
+<?php require('template/footer.phtml') ?>
