@@ -1,0 +1,74 @@
+<!-- <?php session_start() ?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/my-style.css" rel="stylesheet">
+
+    <title>BCS</title></div>
+</head>
+
+<body>
+<header id="nav" class="sticky-nav">
+    <nav class="w-container">
+        <ul role="list" class="nav-grid w-list-unstyled">
+            <li id="w-node-b0b93404ea65-8b262167">
+                <a href="index.php" class="nav-logo-link w-inline-block"><img src="images/bcs-logo.svg" height="75"></a>
+            </li>
+            <li>
+                <a href="placement.php" class="nav-link">Placements</a>
+            </li>
+            <li>
+                <a href="organisations.php" class="nav-link">Organisations</a>
+            </li>
+            <li>
+                <a href="universities.php" class="nav-link">Universities</a>
+            </li>
+            <li id="w-node-b0b93404ea65-8b262167"</li>
+            <?php
+                    if(isset($_SESSION['idaccounts'])){
+                    if ($_SESSION['idaccounts'] > 0) {
+                        if (isset($_SESSION['type'])) {
+                            if (trim($_SESSION['type']) == 'Student') {
+
+                                echo '<li><a href="myprofile.php?id=student" class="nav-link">My Profile</a></li>';
+                                echo '<li><a href="myprofile.php?id=logout" class="nav-link">Log Out</a></li>';
+                            }
+                            else{
+                                echo '<li><a href="myprofile.php?id=employer" class="nav-link">My Profile</a></li>';
+                                echo '<li><a href="myprofile.php?id=logout" class="nav-link">Log Out</a></li>';
+                            }
+                        }
+
+                        }
+                    }
+                    else{
+                        echo '<li><a href="signup.php" class="nav-link">Register</a></li>';
+                        echo '<li><a href="login.php" class="nav-link">Login</a></li>';
+                    }
+            if(isset($_SESSION['type'])){
+            if (trim($_SESSION['type']) == 'Student') {
+                echo '<li><a href="searchplacements.php" class="nav-link">Matched Students</a></li>';
+            }
+            else
+            {
+                echo '<li><a href="searchstudents.php" class="nav-link">Matched Placements</a></li>';
+            }
+            }
+            ?>
+
+
+        </ul>
+    </nav>
+</header>
+</body>

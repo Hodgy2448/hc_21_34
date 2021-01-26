@@ -1,0 +1,101 @@
+<?php require('template/header.phtml') ?>
+
+<div id="myprofile">
+    <h1><b>My Profile</b></h1>
+    <p></p>
+    <h2><b><u>Welcome <?php
+                echo $_SESSION['name'];
+                ?>!</u></b></h2>
+    <p></p>
+    <label>Name</label>
+    <?php echo $view->sessionName; ?>
+    <br>
+    <label>Email</label>
+    <?php echo $view->sessionEmail; ?>
+    <br>
+    <label>Date of Birth</label>
+    <?php echo $view->sessionDob; ?>
+    <br>
+    <label>Type</label>
+    <?php echo $view->sessionType; ?>
+    <br>
+    <label>Phone Number</label>
+    <?php echo $view->sessionPhonenumber; ?>
+    <br>
+    <label>Address1</label>
+    <?php echo $view->sessionAddress1; ?>
+    <br>
+    <label>Address2</label>
+    <?php echo $view->sessionAddress2; ?>
+    <br>
+    <label>Address3</label>
+    <?php echo $view->sessionAddress3; ?>
+    <br>
+    <label>Postcode</label>
+    <?php echo $view->sessionPostcode; ?>
+
+</div>
+<div id="myprofileextra">
+    <h2>Create Placement:</h2>
+    
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
+        <label>Company Title: </label>
+        <input type="text" name="companytitle" value=""
+            <?php if (isset($_POST['companytitle'])) {
+                echo $_POST['companytitle']; 	} ?> />
+        <br>
+        <label>Description: </label>
+        <input type="text" name="description" value=""
+            <?php if (isset($_POST['description'])) {
+                echo $_POST['description']; 	} ?> />
+        <br>
+        <label>Location: </label>
+        <input type="text" name="location" value=""
+            <?php if (isset($_POST['location'])) {
+                echo $_POST['location']; 	} ?> />
+        <br>
+        <label>Needed Skills: </label>
+        <input type="text" name="skills" value=""
+            <?php if (isset($_POST['skills'])) {
+                echo $_POST['skills']; 	} ?> />
+        <br>
+        <label>Work Type: </label>
+        <input type="text" name="worktype" value=""
+            <?php if (isset($_POST['worktype'])) {
+                echo $_POST['worktype']; 	} ?> />
+        <br>
+        <label>Salary: </label>
+        <input type="text" name="salary" value=""
+            <?php if (isset($_POST['salary'])) {
+                echo $_POST['salary']; 	} ?> />
+        <br>
+        <label>Start Date: </label>
+        <input type="text" name="startdate" value=""
+            <?php if (isset($_POST['startdate'])) {
+                echo $_POST['startdate']; 	} ?> />
+        <br>
+        <label>End Date: </label>
+        <input type="text" name="enddate" value=""
+            <?php if (isset($_POST['enddate'])) {
+                echo $_POST['enddate']; 	} ?> />
+</div>
+
+<div id="loginbutton">
+    <input type="submit" value="submit" name="submit" />
+    <input type="reset" value="reset" name="reset" />
+</div>
+<?php if (isset($view->result)) : ?>
+    <p><?php echo $view->result; ?></p>
+<?php endif; ?>
+</form>
+
+
+
+
+
+
+
+</div>
+
+
+<?php require('template/footer.phtml') ?>

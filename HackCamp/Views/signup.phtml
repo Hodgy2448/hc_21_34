@@ -1,0 +1,82 @@
+<?php require('template/header.phtml') ?>
+
+
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+
+                <div id="signupform">
+                    <h2><b><u>Sign Up Form</u></b></h2>
+                    <p>
+                        <label>Type: </label>
+                        <select id="" name="type" <?php if (isset($_POST['type'])) { echo $_POST['type']; 	} ?> />
+                            <option value="Student" name="type">Student</option>
+                            <option value="Employer" name="type">Organisation</option>
+                    </select>
+                    </p>
+                    <p>
+                        <label>Full name: </label>
+                        <input type="text" name="name" value=""
+                        <?php if (isset($_POST['name'])) {
+                            echo $_POST['name']; 	} ?> />
+                    </p>
+                    <p>
+                        <label>Email: </label>
+                        <input type="text" name="email" value=""
+                            <?php if (isset($_POST['email'])) {
+                                echo $_POST['email']; 	} ?> />
+                    </p>
+                    <p>
+                        <label>Date Of Birth: </label>
+                        <input type="date" name="dob" value=""
+                            <?php if (isset($_POST['dob'])) {
+                                echo $_POST['dob']; 	} ?> />
+                    </p>
+                    <p>
+                        <label>Password: </label>
+                        <input type="text" name="password" value=""
+                            <?php if (isset($_POST['password'])) {
+                                echo $_POST['password']; 	} ?> />
+                    </p>
+                    <p>
+                    <label>Phone number: </label>
+                    <input type="text" name="phonenumber" value=""
+                        <?php if (isset($_POST['phonenumber'])) {
+                            echo $_POST['phonenumber']; 	} ?> />
+                    </p>
+                    <p>
+                    <label>Address1: </label>
+                    <input type="text" name="address1" value=""
+                        <?php if (isset($_POST['address1'])) {
+                            echo $_POST['address1']; 	} ?> />
+                    </p>
+                    <p>
+                    <label>Address2: </label>
+                    <input type="text" name="address2" value=""
+                        <?php if (isset($_POST['address2'])) {
+                            echo $_POST['address2']; 	} ?> />
+                    </p>
+                    <p>
+                        <label>Address3: </label>
+                        <input type="text" name="address3" value=""
+                            <?php if (isset($_POST['address3'])) {
+                                echo $_POST['address3']; 	} ?> />
+                    </p>
+                    <p>
+                        <label>Postcode: </label>
+                        <input type="text" name="postcode" value=""
+                            <?php if (isset($_POST['postcode'])) {
+                                echo $_POST['postcode']; 	} ?> />
+                    </p>
+                </div>
+    <div id="signupform">
+        <input type="submit" value="Sign Up" name="submit" />
+    </div>
+
+    <?php if (isset($view->result)) : ?>
+        <p><?php echo $view->result; ?></p>
+    <?php endif; ?>
+
+
+</form>
+
+
+<?php require('template/footer.phtml') ?>

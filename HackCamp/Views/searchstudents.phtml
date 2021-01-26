@@ -1,0 +1,18 @@
+<?php require('template/header.phtml') ?>
+
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <div id="searchform">
+        <h2><b><u>Search</u></b></h2>
+
+<!--        <p>-->
+<!--            <label>Skills Required: </label>-->
+<!--            <input type="text" name="skills" value=""-->
+<!--                --><?php //if (isset($_POST['skills'])) {
+//                    echo $_POST['skills']; 	} ?><!-- />-->
+<!--        </p>-->
+    </div>
+    <div id="searchform">
+        <input type="submit" value="Search" name="submit" />
+    </div>
+</form>
+<?php require('template/footer.phtml') ?>

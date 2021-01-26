@@ -1,0 +1,30 @@
+<?php require('template/header.phtml') ?>
+
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <div id="title">
+        <h2><b><u>Organisations</u></b></h2>
+    </div>
+    <div id="organisations">
+
+    <!-- For each -->
+    <div id="organisationsRow">
+        <?php if (isset($view->organisationCompany)) : ?>
+            <p><?php echo $view->organisationCompany; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->organisationLocation)) : ?>
+            <p><?php echo $view->organisationLocation; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->organisationPostcode)) : ?>
+            <p><?php echo $view->organisationPostcode; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->organisationCompanyEmail)) : ?>
+            <p><?php echo $view->organisationCompanyEmail; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->organisationCompanyPhone)) : ?>
+            <p><?php echo $view->organisationCompanyPhone; ?></p>
+        <?php endif; ?>
+    </div>
+    </div>
+</form>
+
+<?php require('template/footer.phtml') ?>

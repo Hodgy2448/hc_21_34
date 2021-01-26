@@ -1,0 +1,39 @@
+<?php require('template/header.phtml') ?>
+
+
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+<div id="title">
+    <h2><b><u>Placements</u></b></h2>
+</div>
+    <div id="placements">
+    <!-- For each -->
+        <div id="placementsRow">
+        <?php if (isset($view->placementTitle)) : ?>
+            <p><?php echo $view->placementTitle; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->placementDescription)) : ?>
+            <p><?php echo $view->placementDescription; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->placementLocation)) : ?>
+            <p><?php echo $view->placementLocation; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->placementSkills)) : ?>
+            <p><?php echo $view->placementSkills; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->placementWorkType)) : ?>
+            <p><?php echo $view->placementWorkType; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->placementSalary)) : ?>
+            <p><?php echo $view->placementSalary; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->placementStartDate)) : ?>
+            <p><?php echo $view->placementStartDate; ?></p>
+        <?php endif; ?>
+        <?php if (isset($view->placementEndDate)) : ?>
+            <p><?php echo $view->placementEndDate; ?></p>
+        <?php endif; ?>
+        </div>
+    </div>
+</form>
+
+<?php require('template/footer.phtml') ?>
