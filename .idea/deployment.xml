@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="h21-34" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="h21-34">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public_html/cvupload" local="$PROJECT_DIR$" web="/cvupload" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
